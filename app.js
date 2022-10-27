@@ -3,6 +3,7 @@ import express from 'express';
 
 const app = express();
 app.get("/", async(_, res) => {
+    // Solicitamos la información de nuestro contenedor de Firebase en la carpeta dada
     res.send(await listAllDocsFromThisFolder("Calificaciones"));
 });
 
